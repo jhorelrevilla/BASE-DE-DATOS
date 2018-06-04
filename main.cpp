@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+#include "Controller.h"
+#include <stdlib.h>
+
 
 int lenght(char* a){
     int cont=0;
@@ -54,17 +57,30 @@ int main()
     cout<<comodin(a,b)<<endl;
     cout<<comodin(a,c)<<endl;
     cout<<comodin(a,d)<<endl;
-    */
+
     char* e[]={"Abeja","Carro","Burro","Elefante","Dentista"};
     ord_alf(e,5);
      for(int i=0;i<5;i++){//3
         cout<<e[i]<<endl;
         cout<<"\n";
     }
+    */
+    int elec=1;
+    while (elec!=0){
+        cout<<"1) ORDENAR PACIENTES "<<endl;
+        cout<<"2) INGRESAR NUEVO PACIENTE "<<endl;
+        cout<<"3) MODIFICAR PACIENTE"<<endl;
+        cout<<"4) ELIMINAR PACIENTE "<<endl;
+        cout<<"5) BUSCAR PACIENTE"<<endl;cin>>elec;
+        Controller c(elec);
+        system("CLS");
+    }
+
 
 
 
 
     return 0;
+
 }
 
