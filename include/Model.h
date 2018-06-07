@@ -8,9 +8,8 @@ class Model
 {
     public:
         Model();
-
-    private:
         Hospital hosp;
+
 };
 
 #endif // MODEL_H

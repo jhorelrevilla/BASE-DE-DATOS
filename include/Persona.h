@@ -1,18 +1,21 @@
 #ifndef PERSONA_H
 #define PERSONA_H
-
+#include<iostream>
+#include <string>
+using namespace std;
 
 class Persona
 {
     public:
         Persona();
-        Persona(char*,int);
-        void set_nombre(char*);
+        Persona(string,int);
+        Persona(const Persona &p);
+        void set_nombre(string a);
         void set_edad(int);
-        char* get_nombre();
+        string get_nombre();
         int get_edad();
     private:
-        char* nombre;
+        string nombre;
         int edad;
 };
 

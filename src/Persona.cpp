@@ -4,15 +4,20 @@ Persona::Persona(){
     nombre="NULL";
     edad=0;
 }
-Persona::Persona(char* i,int j)
+Persona::Persona(string i,int j)
 {
     nombre=i;
     edad=j;
 }
-char* Persona::get_nombre(){
+Persona::Persona(const Persona &p){
+    this->nombre=nombre;
+    this->edad=edad;
+
+}
+string Persona::get_nombre(){
     return nombre;
 }
-void Persona::set_nombre(char* a){
+void Persona::set_nombre(string a){
     nombre=a;
 }
 int Persona::get_edad(){
