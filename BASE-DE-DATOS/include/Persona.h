@@ -1,20 +1,22 @@
 #ifndef PERSONA_H
 #define PERSONA_H
 
+#include <iostream>
+#include <Controller.h>
 
-class Persona
+using namespace std;
+class Persona : public Controller
 {
+
+    private:
+        char nombre[30];
+        char apellidos[30];
+        string domicilio;
+        int edad;
     public:
         Persona();
-        Persona(char*,int);
-        void set_nombre(char*);
-        void set_edad(int);
-        char* get_nombre();
-
-        int get_edad();
-    private:
-        char* nombre;
-        int edad;
+        int registro();
+        void altas();
 //        char sexo();
         //int numHistorial();
 };

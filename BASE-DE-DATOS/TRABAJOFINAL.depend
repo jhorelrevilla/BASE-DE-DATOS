@@ -40,30 +40,34 @@
 	"Controller.h"
 	<stdlib.h>
 
-1528168191 c:\users\anel pc\desktop\base-de-datos\include\controller.h
+1528346933 c:\users\anel pc\desktop\base-de-datos\include\controller.h
 	<iostream>
-	"Model.h"
 	<string>
 
-1528156065 c:\users\anel pc\desktop\base-de-datos\include\model.h
+1528346581 c:\users\anel pc\desktop\base-de-datos\include\model.h
 	<iostream>
 	"View.h"
 	"Hospital.h"
 
 1528156065 c:\users\anel pc\desktop\base-de-datos\include\view.h
 
-1528156065 c:\users\anel pc\desktop\base-de-datos\include\hospital.h
+1528346570 c:\users\anel pc\desktop\base-de-datos\include\hospital.h
 	"Persona.h"
 
-1528164990 c:\users\anel pc\desktop\base-de-datos\include\persona.h
+1528346781 c:\users\anel pc\desktop\base-de-datos\include\persona.h
+	<iostream>
+	<Controller.h>
 
-1528156065 source:c:\users\anel pc\desktop\base-de-datos\src\controller.cpp
+1528168229 source:c:\users\anel pc\desktop\base-de-datos\src\controller.cpp
 	"Controller.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
 
-1528156065 source:c:\users\anel pc\desktop\base-de-datos\src\hospital.cpp
+1528346945 source:c:\users\anel pc\desktop\base-de-datos\src\hospital.cpp
 	"Hospital.h"
 
-1528156065 source:c:\users\anel pc\desktop\base-de-datos\src\model.cpp
+1528346950 source:c:\users\anel pc\desktop\base-de-datos\src\model.cpp
 	"Model.h"
 
 1528156065 source:c:\users\anel pc\desktop\base-de-datos\src\persona.cpp
