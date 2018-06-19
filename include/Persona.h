@@ -7,14 +7,11 @@ using namespace std;
 class Persona
 {
     public:
-        Persona();
-        Persona(string,int);
-        Persona(const Persona &p);
         void set_nombre(string a);
         void set_edad(int);
         string get_nombre();
         int get_edad();
-    private:
+    protected:
         string nombre;
         int edad;
 };

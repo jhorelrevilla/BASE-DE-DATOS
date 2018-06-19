@@ -8,11 +8,9 @@ using namespace std;
 class Controller
 {
     public:
-        Controller();
-        void eleccion(int a);
-    protected:
-        Model *ab;
-
+        void opcion(int &a);
+    private:
+        Model modelo;
 };
 
 
