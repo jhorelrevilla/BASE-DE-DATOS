@@ -4,8 +4,8 @@
 #include <iostream>
 
 using namespace std;
-#define USER "uno"
-#define PASS "dos"
+#define USER "jhorel"
+#define PASS "123qwe234wer"
 
 void Controller::ingreso()
 {
@@ -17,7 +17,7 @@ void Controller::ingreso()
         cout << "\t\t\t----------------"<<endl;
         cout<<"INGRESE SU NOMBRE DE USUARIO:  ";
         cin>>usuario;
-        cout<<"INGRESE SU CONTRASENHA:  ";
+        cout<<"INGRESE SU PASSWORD:  ";
         char caracter;
         caracter = getch();
         password = "";
