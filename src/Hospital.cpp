@@ -16,12 +16,21 @@ int Hospital::lenght(string a){
 int Hospital::conv_char(char a){
     return a-'0';
 }
+
+char Hospital::p_l(string a){
+    return a[0];
+}
+
+
+
+
 void Hospital::imprimir(){
     for(int i=0;i<tamanio;i++){
         cout<<"///////////////////////////////////"<<endl;
-        cout<<"NOMBRE: "<<a[i].get_nombre()<<endl;
+        cout<<"Nombre: "<<a[i].get_nombre()<<" ";
+        cout<<a[i].get_apellido()<<endl;
         cout<<"EDAD: "<<a[i].get_edad()<<endl;
-        cout<<"NUMERO DE PACIENTE: "<<a[i].Num_paciente<<endl;
+        cout<<"NUMERO DE PACIENTE: "<<a[i].get_numpac()<<endl;
         cout<<"///////////////////////////////////"<<endl;
     }
 }
@@ -45,21 +54,23 @@ void Hospital::vacear(){
 int Hospital::get_tamanio(){
     return tamanio;
 }
-void Hospital::agregar(string nuevonombre,int nuevaedad){
-    Paciente *nuevo= new Paciente [tamanio+1];
+void Hospital::agregar(string nuevonombre,string nuevoapellido,int nuevaedad){
+    Paciente *nuevo= new Paciente[tamanio+1];
     for(int i=0;i<tamanio;i++){
         nuevo[i]=a[i];
     }
     tamanio++;
     nuevo[tamanio-1].set_nombre(nuevonombre);
+    nuevo[tamanio-1].set_apellido(nuevoapellido);
     nuevo[tamanio-1].set_edad(nuevaedad);
-    nuevo[tamanio-1].Num_paciente=++contador;
+    nuevo[tamanio-1].set_numpac(++contador);
     delete [] a;
     a=nuevo;
 }
-void Hospital::cambiar(int pos,int ed, string b){
+void Hospital::cambiar(int pos,int ed, string nom,string apell){
     a[pos].set_edad(ed);
-    a[pos].set_nombre(b);
+    a[pos].set_nombre(nom);
+    a[pos].set_apellido(apell);
 }
 int Hospital::comodin(string a,string b){
     int conta=0;
@@ -97,6 +108,26 @@ void Hospital::ord_edad(){
     }
 }
 
+void Hospital::ord_alf()
+{
+    int cont=1;
+    while(cont!=0){
+        cont=0;
+        for(int i=0;i<tamanio-1;i++){
+            string uno=a[i].get_nombre();
+            string dos=a[i+1].get_nombre();
+            if(conv_char(p_l(uno)) > conv_char(p_l(dos))){
+                cout<<p_l(uno)<<endl;
+                cout<<p_l(dos)<<endl;
+                Paciente temp(a[i]);
+                a[i]=a[i+1];
+                a[i+1]=temp;
+                cont+=1;
+            }
+        }
+    }
+}
+
 void Hospital::ord_numpac(){
     int cont=1;
     while(cont!=0){
@@ -124,7 +155,6 @@ bool Hospital::buscar(string a,string b){
                 conta++;
             }
             if(conta==lenght(b)){
-                cout<<"a: "<<lenght(b);
                 return 1;
             }
         }
@@ -136,11 +166,12 @@ bool Hospital::buscar(string a,string b){
 
 void Hospital::bus_rela(string nnombre){
     for(int i=0;i<tamanio;i++){
-        if(buscar(nnombre,a[i].get_nombre())){
+        if(buscar(nnombre,a[i].get_apellido())){
             cout<<"Encontrado"<<endl;
-            cout<<"Nombre: "<<a[i].get_nombre()<<endl;
+            cout<<"Nombre: "<<a[i].get_nombre()<<" ";
+            cout<<a[i].get_apellido()<<endl;
             cout<<"Edad: "<<a[i].get_edad()<<endl;
-            cout<<"Numero de paciente: "<<a[i].Num_paciente<<endl;
+            cout<<"Numero de paciente: "<<a[i].get_numpac()<<endl;
             return;
         }
     }
@@ -152,20 +183,26 @@ void Hospital::bus_rela(string nnombre){
     }
 }
 
-
-void Hospital::ord_alf(char *a[],int tamanio){
-    /*for(int i=0;i<tamanio-1;i++){
-        if(conv_char(*(a[i])) >= conv_char(*(a[i+1]))){
-            char * temp =a[i];
-            a[i]=a[i+1];
-            a[i+1]=temp;
+void Hospital::bus_numpac(int num){
+    int en=0;
+    for(int i=0;i<tamanio;i++){
+        if(a[i].get_numpac() == num){
+            cout<<"Encontrado"<<endl;
+            cout<<"Nombre: "<<a[i].get_nombre()<<" ";
+            cout<<a[i].get_apellido()<<endl;
+            cout<<"Edad: "<<a[i].get_edad()<<endl;
+            cout<<"Numero de paciente: "<<a[i].get_numpac()<<endl;
+            en+=1;
         }
     }
-    */
+    if(en==0){
+        cout<<"NO ENCONTRADO"<<endl;
+    }
 }
 
 
-void Hospital::agregarpos(int ed,string nom, int pos){
+
+void Hospital::agregarpos(int ed,string nom,string apelli, int pos){
     Paciente *nuevo= new Paciente [tamanio+1];
     tamanio++;
     for(int i=0;i<pos;i++){
@@ -176,7 +213,8 @@ void Hospital::agregarpos(int ed,string nom, int pos){
     }
     nuevo[pos].set_edad(ed);
     nuevo[pos].set_nombre(nom);
-    nuevo[pos].Num_paciente=contador++;
+    nuevo[pos].set_apellido(apelli);
+    nuevo[pos].set_numpac(++contador);
     delete [] a;
     a=nuevo;
 }

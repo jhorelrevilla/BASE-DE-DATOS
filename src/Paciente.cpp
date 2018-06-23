@@ -27,3 +27,9 @@ bool Paciente::operator >=(const Paciente& a){
     }
     return false;
 }
+int Paciente::get_numpac(){
+    return Num_paciente;
+}
+void Paciente::set_numpac(int a){
+    Num_paciente=a;
+}

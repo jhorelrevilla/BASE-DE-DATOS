@@ -1,7 +1,7 @@
 #include "Controller.h"
 
 void Controller::opcion(int &a){
-    string nombre;
+    string nombre,apellido;
     int edad;
     int pos,age;
     string name;
@@ -14,7 +14,7 @@ void Controller::opcion(int &a){
         while(eleccion!=0){
             switch(eleccion){
             case 1:
-
+                modelo.hosp.ord_alf();
                 eleccion=0;
                 break;
             case 2:
@@ -28,32 +28,51 @@ void Controller::opcion(int &a){
             }
         }
     }
-    else if(a==2){
+    if(a==2){
         cout<<"ingresa nombre ";cin>>nombre;
+        cout<<"ingresa apellido ";cin>>apellido;
         cout<<"ingresa edad ";cin>>edad;
-        modelo.hosp.agregar(nombre,edad);
+        modelo.hosp.agregar(nombre,apellido,edad);
     }
-    else if(a==3){
+    if(a==3){
 
         cout<<"INGRESA LA POSICION: ";cin>>pos;
         if(modelo.hosp.get_tamanio()>pos && 0<pos){
             cout<<"INGRESA LA EDAD: ";cin>>age;
             cout<<"INGRESA NOMBRE: ";cin>>name;
-            modelo.hosp.cambiar(pos-1,age,name);
+            cout<<"INGRESA NOMBRE: ";cin>>apellido;
+            modelo.hosp.cambiar(pos-1,age,name,apellido);
         }
         pos=0;
         age=0;
         name=" ";
     }
-    else if(a==4){
+    if(a==4){
         cout<<"ingresa la posicion: ";cin>>pos;
         modelo.hosp.borrar(pos-1);
     }
-    else if(a==5){
-        cout<<"ingresa el nombre de la persona: ";cin>>name;
-        modelo.hosp.bus_rela(name);
+    if(a==5){
+        int elec;
+        cout<<"Como desea buscar: "<<endl;
+        cout<<"     1->Apellido"<<endl;
+        cout<<"     2->Numero de paciente "<<endl;cin>>elec;
+        while(elec!=0){
+            switch(elec){
+            case 1:
+                cout<<"ingresa el apellido de la persona: ";cin>>apellido;
+                modelo.hosp.bus_rela(apellido);
+                elec=0;
+                break;
+            case 2:
+                cout<<"ingresa el numero de paciente: ";cin>>pos;
+                modelo.hosp.bus_numpac(pos);
+                elec=0;
+                break;
+            }
+        }
+
     }
-    else if(a==6){
+    if(a==6){
         modelo.hosp.imprimir();
     }
 }

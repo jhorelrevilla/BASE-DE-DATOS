@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
-1529251848 source:c:\users\jhorel\desktop\trabajofinal\src\persona.cpp
+1529712423 source:c:\users\jhorel\desktop\trabajofinal\src\persona.cpp
 	"Persona.h"
 
-1529251848 c:\users\jhorel\desktop\trabajofinal\include\persona.h
+1529712423 c:\users\jhorel\desktop\trabajofinal\include\persona.h
 	<iostream>
 	<string>
 
-1529186698 source:c:\users\jhorel\desktop\trabajofinal\main.cpp
+1529709213 source:c:\users\jhorel\desktop\trabajofinal\main.cpp
 	<iostream>
 	"Controller.h"
 	<windows.h>
 
-1529286404 source:c:\users\jhorel\desktop\trabajofinal\src\controller.cpp
+1529713303 source:c:\users\jhorel\desktop\trabajofinal\src\controller.cpp
 	"Controller.h"
 
 1529207822 c:\users\jhorel\desktop\trabajofinal\include\controller.h
@@ -26,12 +26,12 @@
 
 1528062715 c:\users\jhorel\desktop\trabajofinal\include\view.h
 
-1529286669 c:\users\jhorel\desktop\trabajofinal\include\hospital.h
+1529712916 c:\users\jhorel\desktop\trabajofinal\include\hospital.h
 	"Paciente.h"
 	<string>
 	<iostream>
 
-1529286404 source:c:\users\jhorel\desktop\trabajofinal\src\hospital.cpp
+1529714609 source:c:\users\jhorel\desktop\trabajofinal\src\hospital.cpp
 	"Hospital.h"
 
 1528064721 source:c:\users\jhorel\desktop\trabajofinal\src\model.cpp
@@ -40,9 +40,9 @@
 1528062715 source:c:\users\jhorel\desktop\trabajofinal\src\view.cpp
 	"View.h"
 
-1529254705 c:\users\jhorel\desktop\trabajofinal\include\paciente.h
+1529710499 c:\users\jhorel\desktop\trabajofinal\include\paciente.h
 	"Persona.h"
 
-1529254611 source:c:\users\jhorel\desktop\trabajofinal\src\paciente.cpp
+1529710499 source:c:\users\jhorel\desktop\trabajofinal\src\paciente.cpp
 	"Paciente.h"
 

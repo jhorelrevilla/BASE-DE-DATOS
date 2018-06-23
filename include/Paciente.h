@@ -4,13 +4,15 @@
 
 class Paciente:public Persona
 {
+        int  Num_paciente=0;
     public:
         Paciente();
         Paciente(string,int);
         Paciente(const Paciente &p);
         bool operator > (const Paciente& a);
         bool operator >= (const Paciente& a);
-        int long Num_paciente=0;
+        int get_numpac();
+        void set_numpac(int);
 };
 
 #endif // PACIENTE_H
