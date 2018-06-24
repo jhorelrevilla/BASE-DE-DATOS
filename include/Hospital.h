@@ -2,6 +2,10 @@
 #define HOSPITAL_H
 #include "Paciente.h"
 #include <string>
+#include <fstream>
+#include <cstdlib>
+#include <conio.h>
+
 #include<iostream>
 using namespace std;
 class Hospital
@@ -21,6 +25,7 @@ class Hospital
 
         bool buscar(string,string);
         void bus_rela(string);
+        bool bus_numpacB(int);
         void bus_numpac(int);
 
 

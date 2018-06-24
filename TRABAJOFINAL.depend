@@ -46,3 +46,58 @@
 1529710499 source:c:\users\jhorel\desktop\trabajofinal\src\paciente.cpp
 	"Paciente.h"
 
+1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\main.cpp
+	<iostream>
+	"Controller.h"
+	<windows.h>
+
+1529880623 c:\users\anel pc\downloads\base-de-datos-master (1)\include\controller.h
+	<iostream>
+	<string>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	"Model.h"
+
+1529786564 c:\users\anel pc\downloads\base-de-datos-master (1)\include\model.h
+	<iostream>
+	"View.h"
+	"Hospital.h"
+
+1529786564 c:\users\anel pc\downloads\base-de-datos-master (1)\include\view.h
+
+1529880075 c:\users\anel pc\downloads\base-de-datos-master (1)\include\hospital.h
+	"Paciente.h"
+	<string>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1529876436 c:\users\anel pc\downloads\base-de-datos-master (1)\include\paciente.h
+	"Persona.h"
+
+1529786564 c:\users\anel pc\downloads\base-de-datos-master (1)\include\persona.h
+	<iostream>
+	<string>
+
+1529877354 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\controller.cpp
+	"Controller.h"
+
+1529880075 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\hospital.cpp
+	"Hospital.h"
+
+1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\model.cpp
+	"Model.h"
+
+1529877545 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\paciente.cpp
+	"Paciente.h"
+
+1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\persona.cpp
+	"Persona.h"
+
+1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\view.cpp
+	"View.h"
+

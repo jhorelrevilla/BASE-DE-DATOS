@@ -29,18 +29,31 @@ void Controller::opcion(int &a){
         }
     }
     if(a==2){
-        cout<<"ingresa nombre ";cin>>nombre;
-        cout<<"ingresa apellido ";cin>>apellido;
-        cout<<"ingresa edad ";cin>>edad;
-        modelo.hosp.agregar(nombre,apellido,edad);
+//        stringstream tempo;
+//        tempo<<modelo.hosp.get_tamanio();
+//        string nameArchivo=tempo.nameArchivo();
+//        cout<<"ingresa nombre ";cin>>nombre;
+//        cout<<"ingresa apellido ";cin>>apellido;
+//        cout<<"ingresa edad ";cin>>edad;
+//        modelo.hosp.agregar(nombre,apellido,edad);
+//
+//
+//        cin.ignore();
+//        nameArchivo += ".txt";
+//        ofstream fs(nameArchivo.c_str());
+//        fs <<nombre<<endl;
+//        fs <<apellido<<endl;
+//        fs <<edad<<endl;
+//        fs.close();
+
     }
     if(a==3){
 
-        cout<<"INGRESA LA POSICION: ";cin>>pos;
-        if(modelo.hosp.get_tamanio()>pos && 0<pos){
-            cout<<"INGRESA LA EDAD: ";cin>>age;
-            cout<<"INGRESA NOMBRE: ";cin>>name;
-            cout<<"INGRESA NOMBRE: ";cin>>apellido;
+        cout<<"INGRESA POSICION: ";cin>>pos;
+        if(modelo.hosp.get_tamanio() <=pos && pos>0){
+            cout<<"INGRESA NUEVO NOMBRE: ";cin>>name;
+            cout<<"INGRESA LA NUEVA EDAD: ";cin>>age;
+            cout<<"INGRESA NUEVO APELLIDO: ";cin>>apellido;
             modelo.hosp.cambiar(pos-1,age,name,apellido);
         }
         pos=0;

@@ -11,7 +11,9 @@ Paciente::Paciente(string i,int j)
     edad=j;
 }
 Paciente::Paciente(const Paciente &p){
+
     this->nombre=p.nombre;
+    this->apellido=p.apellido;
     this->edad=p.edad;
     this->Num_paciente=p.Num_paciente;
 }

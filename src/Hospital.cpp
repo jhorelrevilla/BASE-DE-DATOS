@@ -27,6 +27,7 @@ char Hospital::p_l(string a){
 void Hospital::imprimir(){
     for(int i=0;i<tamanio;i++){
         cout<<"///////////////////////////////////"<<endl;
+        cout<<"POSICION"<<i+1<<endl;
         cout<<"Nombre: "<<a[i].get_nombre()<<" ";
         cout<<a[i].get_apellido()<<endl;
         cout<<"EDAD: "<<a[i].get_edad()<<endl;
@@ -54,7 +55,9 @@ void Hospital::vacear(){
 int Hospital::get_tamanio(){
     return tamanio;
 }
+
 void Hospital::agregar(string nuevonombre,string nuevoapellido,int nuevaedad){
+    string nomb_arch;
     Paciente *nuevo= new Paciente[tamanio+1];
     for(int i=0;i<tamanio;i++){
         nuevo[i]=a[i];
@@ -65,7 +68,8 @@ void Hospital::agregar(string nuevonombre,string nuevoapellido,int nuevaedad){
     nuevo[tamanio-1].set_edad(nuevaedad);
     nuevo[tamanio-1].set_numpac(++contador);
     delete [] a;
-    a=nuevo;
+
+
 }
 void Hospital::cambiar(int pos,int ed, string nom,string apell){
     a[pos].set_edad(ed);
@@ -182,6 +186,23 @@ void Hospital::bus_rela(string nnombre){
         }
     }
 }
+
+
+
+bool Hospital::bus_numpacB(int num){
+    int en=0;
+    for(int i=0;i<tamanio;i++){
+        if(a[i].get_numpac() == num){
+            return 1;
+        }
+    }
+    if(en==0){
+        return 0;
+    }
+}
+
+
+
 
 void Hospital::bus_numpac(int num){
     int en=0;
