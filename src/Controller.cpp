@@ -73,9 +73,12 @@ void Controller::opcion(int a){
                 break;
             }
         }
-
     }
     if(a==6){
         modelo.hosp.imprimir();
+    }
+    if(a==7){
+        cout<<"DESPUES DE BORRAR TODO EL REGISTRO TIENE QUE VOLVER A ABRIR EL PROGRAMA"<<endl;
+        modelo.hosp.vacear();
     }
 }

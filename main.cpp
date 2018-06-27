@@ -17,7 +17,8 @@ int main(){
         cout<<"3) MODIFICAR PACIENTE"<<endl;
         cout<<"4) ELIMINAR PACIENTE "<<endl;
         cout<<"5) BUSCAR PACIENTE"<<endl;
-        cout<<"6) IMPRIMIR REGISTRO"<<endl;cin>>elec;
+        cout<<"6) IMPRIMIR REGISTRO"<<endl;
+        cout<<"7) VACEAR REGISTRO"<<endl;cin>>elec;
         c.opcion(elec);
         system("pause");
         system("CLS");

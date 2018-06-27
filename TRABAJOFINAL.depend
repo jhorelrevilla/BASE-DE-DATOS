@@ -101,7 +101,7 @@
 1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\view.cpp
 	"View.h"
 
-1530074907 source:c:\users\jhorel\documents\base-de-datos\main.cpp
+1530098586 source:c:\users\jhorel\documents\base-de-datos\main.cpp
 	<iostream>
 	"Controller.h"
 	<windows.h>
@@ -153,10 +153,10 @@
 1530075440 source:c:\users\jhorel\documents\base-de-datos\src\paciente.cpp
 	"Paciente.h"
 
-1530071264 source:c:\users\jhorel\documents\base-de-datos\src\controller.cpp
+1530098794 source:c:\users\jhorel\documents\base-de-datos\src\controller.cpp
 	"Controller.h"
 
-1530074579 source:c:\users\jhorel\documents\base-de-datos\src\hospital.cpp
+1530098681 source:c:\users\jhorel\documents\base-de-datos\src\hospital.cpp
 	"Hospital.h"
 
 1530075313 c:\users\jhorel\documents\base-de-datos\include\pacien.h

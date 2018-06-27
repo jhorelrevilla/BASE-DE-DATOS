@@ -118,14 +118,12 @@ void Hospital::borrar(int posicion){
         mod_arch(convertiratexto(i+1),nombtemp1,apelltemp1,edadtemp1,numptemp1);
         mod_arch(convertiratexto(i+2),nombtemp2,apelltemp2,edadtemp2,numptemp2);
     }
-
+    //////////
     string nameArchivo=convertiratexto(posicion+1);
     nameArchivo += ".txt";
-
     char buffer[5];
     strcpy(buffer,nameArchivo.c_str());
     remove(buffer);
-
     ///////////
     Paciente *nuevo= new Paciente [tamanio-1];
     tamanio--;
@@ -138,23 +136,22 @@ void Hospital::borrar(int posicion){
     delete [] a;
     a=nuevo;
     //////////////////
-
     string nameA=convertiratexto(posicion+2);
     nameA+=".txt";
-    cout<<posicion+2<<endl;
     char buffer1[5];
     strcpy(buffer1,nameA.c_str());
-
-
     rename(buffer1,buffer);
-
-
-
-
-
-
 }
 void Hospital::vacear(){
+    for(int i=1;i<=tamanio;i++){
+
+        string nameArchivo=convertiratexto(i);
+        nameArchivo += ".txt";
+        char buffer[5];
+        strcpy(buffer,nameArchivo.c_str());
+        remove(buffer);
+    }
+    cout<<"a"<<endl;
     delete [] a;
     tamanio=0;
 }
@@ -319,8 +316,6 @@ bool Hospital::buscar(string a,string b){
     return 0;
 }
 
-
-
 void Hospital::bus_rela(string nnombre){
     for(int i=0;i<tamanio;i++){
         if(buscar(nnombre,a[i].get_apellido())){
@@ -339,9 +334,6 @@ void Hospital::bus_rela(string nnombre){
         }
     }
 }
-
-
-
 void Hospital::bus_numpac(int num){
     int en=0;
     for(int i=0;i<tamanio;i++){
@@ -358,10 +350,6 @@ void Hospital::bus_numpac(int num){
         cout<<"NO ENCONTRADO"<<endl;
     }
 }
-
-
-
-
 Hospital::~Hospital(){
     delete []a;
 }
