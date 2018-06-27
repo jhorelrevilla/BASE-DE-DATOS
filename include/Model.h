@@ -7,8 +7,6 @@ using namespace std;
 class Model
 {
     public:
-
-        Model();
         Hospital hosp;
 
 };

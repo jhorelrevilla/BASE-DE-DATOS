@@ -101,3 +101,62 @@
 1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\view.cpp
 	"View.h"
 
+1530049160 source:c:\users\jhorel\documents\base-de-datos\main.cpp
+	<iostream>
+	"Controller.h"
+	<windows.h>
+	<cstdlib>
+	<fstream>
+	<string>
+
+1529969883 c:\users\jhorel\documents\base-de-datos\include\controller.h
+	<iostream>
+	<string>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	"Model.h"
+
+1530055580 c:\users\jhorel\documents\base-de-datos\include\model.h
+	<iostream>
+	"View.h"
+	"Hospital.h"
+
+1528062715 c:\users\jhorel\documents\base-de-datos\include\view.h
+
+1530056338 c:\users\jhorel\documents\base-de-datos\include\hospital.h
+	"Paciente.h"
+	<string>
+	<sstream>
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1529710499 c:\users\jhorel\documents\base-de-datos\include\paciente.h
+	"Persona.h"
+
+1529712423 c:\users\jhorel\documents\base-de-datos\include\persona.h
+	<iostream>
+	<string>
+
+1530055580 source:c:\users\jhorel\documents\base-de-datos\src\model.cpp
+	"Model.h"
+
+1529712423 source:c:\users\jhorel\documents\base-de-datos\src\persona.cpp
+	"Persona.h"
+
+1528062715 source:c:\users\jhorel\documents\base-de-datos\src\view.cpp
+	"View.h"
+
+1529969884 source:c:\users\jhorel\documents\base-de-datos\src\paciente.cpp
+	"Paciente.h"
+
+1529970851 source:c:\users\jhorel\documents\base-de-datos\src\controller.cpp
+	"Controller.h"
+
+1530057852 source:c:\users\jhorel\documents\base-de-datos\src\hospital.cpp
+	"Hospital.h"
+

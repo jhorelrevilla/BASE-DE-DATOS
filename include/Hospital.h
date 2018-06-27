@@ -2,9 +2,17 @@
 #define HOSPITAL_H
 #include "Paciente.h"
 #include <string>
+#include <sstream>
 #include <fstream>
 #include <cstdlib>
 #include <conio.h>
+
+
+
+
+
+
+
 
 #include<iostream>
 using namespace std;
@@ -25,7 +33,6 @@ class Hospital
 
         bool buscar(string,string);
         void bus_rela(string);
-        bool bus_numpacB(int);
         void bus_numpac(int);
 
 
@@ -36,7 +43,11 @@ class Hospital
         char p_l(string);
         int lenght(string);
         int conv_char(char);
-        int long contador=1800;
+        void mod_arch(string,string,string,int,int);
+        string convertiratexto(float );
+        int convertiranumero(string);
+        string obt_linea(string,int);
+        int contador=1799;
     private:
         Paciente *a;
         int tamanio=0;
