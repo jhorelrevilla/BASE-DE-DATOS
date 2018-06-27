@@ -17,7 +17,7 @@ using namespace std;
 class Controller
 {
     public:
-        void opcion(int &a);
+        void opcion(int a);
     private:
         Model modelo;
 };

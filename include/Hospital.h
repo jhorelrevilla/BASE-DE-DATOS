@@ -2,6 +2,7 @@
 #define HOSPITAL_H
 #include "Paciente.h"
 #include <string>
+#include <string.h>
 #include <sstream>
 #include <fstream>
 #include <cstdlib>

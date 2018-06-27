@@ -1,6 +1,6 @@
 #include "Controller.h"
 
-void Controller::opcion(int &a){
+void Controller::opcion(int a){
     string nombre,apellido;
     int edad;
     int pos,age;
@@ -40,7 +40,7 @@ void Controller::opcion(int &a){
     if(a==3){
 
         cout<<"INGRESA POSICION: ";cin>>pos;
-        if(modelo.hosp.get_tamanio() <=pos && pos>0){
+        if(modelo.hosp.get_tamanio() >=pos){
             cout<<"INGRESA NUEVO NOMBRE: ";cin>>name;
             cout<<"INGRESA NUEVO APELLIDO: ";cin>>apellido;
             cout<<"INGRESA LA NUEVA EDAD: ";cin>>age;

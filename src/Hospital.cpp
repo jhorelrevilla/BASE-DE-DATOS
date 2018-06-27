@@ -67,7 +67,7 @@ string Hospital::convertiratexto(float f){
 	return ss.str();
 }
 
-void Hospital::mod_arch(string arch,string nomb,string apell,int edad,int num){
+void Hospital::mod_arch(string arch,string nomb="NULL",string apell="NULL",int edad=0,int num=0){
     string nameArchivo=arch;
     nameArchivo += ".txt";
     ofstream fs(nameArchivo.c_str());
@@ -103,17 +103,52 @@ void Hospital::imprimir(){
     }
 }
 void Hospital::borrar(int posicion){
+
+    for(int i=posicion;i<tamanio-1;i++){
+        string nombtemp1=a[i].get_nombre();
+        string apelltemp1=a[i].get_apellido();
+        int edadtemp1=a[i].get_edad();
+        int numptemp1=a[i].get_numpac();
+        cout<<"a: "<<i+2<<" "<<nombtemp1<<" "<<apelltemp1<<" "<<edadtemp1<<" "<<numptemp1<<endl;
+
+        string nombtemp2=a[i+1].get_nombre();
+        string apelltemp2=a[i+1].get_apellido();
+        int edadtemp2=a[i+1].get_edad();
+        int numptemp2=a[i+1].get_numpac();
+
+        cout<<"b: "<<i+1<<endl;
+        mod_arch(convertiratexto(i+2),nombtemp1,apelltemp1,edadtemp1,numptemp1);
+        mod_arch(convertiratexto(i+1),nombtemp2,apelltemp2,edadtemp2,numptemp2);
+    }
+
+    string nameArchivo=convertiratexto(posicion+1);
+    nameArchivo += ".txt";
+
+    char buffer[5];
+    strcpy(buffer,nameArchivo.c_str());
+    remove(buffer);
+
     Paciente *nuevo= new Paciente [tamanio-1];
     tamanio--;
     for(int i=0;i<posicion;i++){
         nuevo[i]=a[i];
     }
-    for(int i=posicion;i<tamanio;i++)
-    {
+    for(int i=posicion;i<tamanio;i++){
         nuevo[i]=a[i+1];
     }
     delete [] a;
     a=nuevo;
+
+
+
+
+
+
+
+
+
+
+
 }
 void Hospital::vacear(){
     delete [] a;

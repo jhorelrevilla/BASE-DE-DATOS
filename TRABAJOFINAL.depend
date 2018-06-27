@@ -101,15 +101,12 @@
 1529786564 source:c:\users\anel pc\downloads\base-de-datos-master (1)\src\view.cpp
 	"View.h"
 
-1530049160 source:c:\users\jhorel\documents\base-de-datos\main.cpp
+1530071033 source:c:\users\jhorel\documents\base-de-datos\main.cpp
 	<iostream>
 	"Controller.h"
 	<windows.h>
-	<cstdlib>
-	<fstream>
-	<string>
 
-1529969883 c:\users\jhorel\documents\base-de-datos\include\controller.h
+1530071033 c:\users\jhorel\documents\base-de-datos\include\controller.h
 	<iostream>
 	<string>
 	<fstream>
@@ -126,9 +123,10 @@
 
 1528062715 c:\users\jhorel\documents\base-de-datos\include\view.h
 
-1530056338 c:\users\jhorel\documents\base-de-datos\include\hospital.h
+1530063883 c:\users\jhorel\documents\base-de-datos\include\hospital.h
 	"Paciente.h"
 	<string>
+	<string.h>
 	<sstream>
 	<fstream>
 	<cstdlib>
@@ -154,9 +152,9 @@
 1529969884 source:c:\users\jhorel\documents\base-de-datos\src\paciente.cpp
 	"Paciente.h"
 
-1529970851 source:c:\users\jhorel\documents\base-de-datos\src\controller.cpp
+1530071033 source:c:\users\jhorel\documents\base-de-datos\src\controller.cpp
 	"Controller.h"
 
-1530057852 source:c:\users\jhorel\documents\base-de-datos\src\hospital.cpp
+1530071050 source:c:\users\jhorel\documents\base-de-datos\src\hospital.cpp
 	"Hospital.h"
 

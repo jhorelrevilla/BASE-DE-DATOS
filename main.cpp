@@ -2,10 +2,6 @@
 using namespace std;
 #include "Controller.h"
 #include <windows.h>
-#include <cstdlib>
-#include <fstream>
-#include <string>
-
 
 
 
