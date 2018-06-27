@@ -1,10 +1,11 @@
 #ifndef PACIENTE_H
 #define PACIENTE_H
 #include "Persona.h"
-
+#include "Pacien.h"
 class Paciente:public Persona
 {
-        int  Num_paciente=0;
+        Pacien p;
+
     public:
         Paciente();
         Paciente(string,int);

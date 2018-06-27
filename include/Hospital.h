@@ -8,13 +8,6 @@
 #include <cstdlib>
 #include <conio.h>
 
-
-
-
-
-
-
-
 #include<iostream>
 using namespace std;
 class Hospital
@@ -38,7 +31,6 @@ class Hospital
 
 
         void agregar(string,string,int);
-        void agregarpos(int,string,string, int);
         ~Hospital();
     protected:
         char p_l(string);

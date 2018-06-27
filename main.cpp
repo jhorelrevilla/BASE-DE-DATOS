@@ -8,8 +8,9 @@ using namespace std;
 
 
 int main(){
-    Controller c;
+
     while (true){
+        Controller c;
         int elec=0;
         cout<<"1) ORDENAR PACIENTES "<<endl;
         cout<<"2) INGRESAR NUEVO PACIENTE "<<endl;
