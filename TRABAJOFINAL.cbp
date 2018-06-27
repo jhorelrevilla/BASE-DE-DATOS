@@ -37,6 +37,7 @@
 		<Unit filename="include/Controller.h" />
 		<Unit filename="include/Hospital.h" />
 		<Unit filename="include/Model.h" />
+		<Unit filename="include/Pacien.h" />
 		<Unit filename="include/Paciente.h" />
 		<Unit filename="include/Persona.h" />
 		<Unit filename="include/View.h" />
@@ -44,6 +45,7 @@
 		<Unit filename="src/Controller.cpp" />
 		<Unit filename="src/Hospital.cpp" />
 		<Unit filename="src/Model.cpp" />
+		<Unit filename="src/Pacien.cpp" />
 		<Unit filename="src/Paciente.cpp" />
 		<Unit filename="src/Persona.cpp" />
 		<Unit filename="src/View.cpp" />
